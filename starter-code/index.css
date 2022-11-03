@@ -1,10 +1,21 @@
 /* ================= */
+/* Custom properties */
+/* ================= */
+
+:root {
+    --clr-dark:230 35% 7%;
+    --clr-light: 231 77% 90%;
+    --clr-white: 0 0% 100%;
+}
+
+/* ================= */
 /* Reset */
 /* ================= */
 
 /* https://piccalil.li/blog/a-modern-css-reset/ */
 
 /* Box Sizing */
+
 *,
 *::before,
 *::after {
@@ -26,12 +37,14 @@ picture {
 }
 
 /* Body set up/reset */
+
 body {
     line-height: 1.5;
     min-height: 100vh;
 }
 
 /* Make images easier to work with */
+
 img,
 picture {
     max-width: 100%;
@@ -39,6 +52,7 @@ picture {
 }
 
 /* Make form elements easier to work with */
+
 input,
 button,
 textarea,
@@ -47,6 +61,7 @@ select {
 }
 
 /* Remove animations for people who've turned them off */
+
 @media (prefers-reduced-motion: reduce) {
     *,
     *::before,
@@ -89,3 +104,13 @@ select {
     white-space: nowrap; /* added line */
     border: 0;
 }
+
+/* Colors */
+
+.bg-dark { background-color: hsl( var(--clr-dark));}
+.bg-accent { background-color: hsl( var(--clr-light));}
+.bg-white { background-color: hsl( var(--clr-white));}
+
+.text-dark { color: hsl( var(--clr-dark));}
+.text-accent { color: hsl( var(--clr-light));}
+.text-white { color: hsl( var(--clr-white));}

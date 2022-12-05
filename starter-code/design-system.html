@@ -10,37 +10,39 @@
     <link rel="stylesheet" href="./index.css">
     <title>Design System</title>
 </head>
-<body>
+<body class="bg-dark">
 
     <div class="container">
         <h1>Design System</h1>
 
         <section id="colors">
             <h2><span>01</span>colors</h2>
-
-            <div>
-                <div class="bg-dark text-white" style="padding: 3rem 1rem 1rem; border: 1px solid white">
-                    #0B0D17
+            <div class="flex">
+                <div style="flex-grow: 1;">
+                    <div class="bg-dark text-white" style="padding: 3rem 1rem 1rem; border: 1px solid white">
+                        #0B0D17
+                    </div>
+                    <p><span class="text-accent">RGB</span> 11, 13, 23</p>
+                    <p><span class="text-accent">HSL</span> 230, 35%, 7%</p>
                 </div>
-                <p><span class="text-accent">RGB</span> 11, 13, 23</p>
-                <p><span class="text-accent">HSL</span> 230, 35%, 7%</p>
-            </div>
-
-            <div>
-                <div style="padding: 3rem 1rem 1rem; border: 1px solid white">
-                    #0B0D17
+    
+                <div style="flex-grow: 1;">
+                    <div class="bg-accent text-dark" style="padding: 3rem 1rem 1rem; border: 1px solid white">
+                        #DOD6F9
+                    </div>
+                    <p>RGB 208,214, 249</p>
+                    <p>HSL 231, 77%, 90%</p>
                 </div>
-                <p>RGB 11, 13, 23</p>
-                <p>HSL 230, 35%, 7%</p>
-            </div>
-
-            <div>
-                <div style="padding: 3rem 1rem 1rem; border: 1px solid white">
-                    #0B0D17
+    
+                <div style="flex-grow: 1;">
+                    <div class="bg-white text-dark" style="padding: 3rem 1rem 1rem; border: 1px solid white">
+                        #FFFFFF
+                    </div>
+                    <p><span>RGB</span> 255, 255, 255</p>
+                    <p><span>HSL</span> 0, 0%, 100%</p>
                 </div>
-                <p><span>RGB</span> 11, 13, 23</p>
-                <p><span>HSL</span> 230, 35%, 7%</p>
             </div>
+            
         </section>
 
         <section id="typography" style="margin: 4rem 0">
@@ -62,11 +64,11 @@
                 </div>
                 <div>
                     <p class="text-accent">Heading 4 - Bellefair Regular - 32px</p>
-                    <p>Uranus, Neptune & Pluto</p>
+                    <p class="fs-600 ff-serif uppercase">Uranus, Neptune & Pluto</p>
                 </div>
                 <div>
                     <p class="text-accent">Heading 5 - Bellefair Regular - 28px - 4.75 Character Space</p>
-                    <p class="text-accent fs-500 ff-sans-cond upppercase letter-spacing-1">So, you want to travel to space.</p>
+                    <p class="fs-800 ff-sans-cond upppercase letter-spacing-1">So, you want to travel to space.</p>
                 </div>
             </div>
             <div style="flex-basis: 100%">

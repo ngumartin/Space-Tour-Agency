@@ -141,7 +141,6 @@ select {
 
 .flow > *:where(:not(:first-child)) {
     margin-top: var(--flow-space, 1 rem);
-    /* outline: 1px solid red; */
 }
 
 .container {
@@ -152,7 +151,6 @@ select {
 
 .grid-container {
     text-align: center;
-    /* border: 3px solid limegreen; */
     display: grid;
     place-items: center;
     padding-inline: 1rem;
@@ -170,26 +168,16 @@ select {
     }
     .grid-container > *:first-child {
         grid-column: 2;
-        /* outline: 1px solid red; */
     }
     
     .grid-container > *:last-child {
         grid-column: 3;
-        /* outline: 1px solid yellow; */
     }
 
     .grid-container--home {
         padding-bottom: max(6rem, 20vh);
         align-items: end;
     }
-}
-
-.grid-container > *:first-child {
-    /* outline: 1px solid red; */
-}
-
-.grid-container > *:last-child {
-    /* outline: 1px solid yellow; */
 }
 
 .sr-only {
@@ -373,7 +361,7 @@ select {
 /* Home */
 
 body {
-    background-size: 1440px 100vh;
+    background-size: 980px 100vh;
     background-repeat: no-repeat;
     background-position: bottom center;
 }
@@ -384,6 +372,7 @@ body {
 
 @media (min-width: 45rem) {
     .home {
+        background-size: 1440px 100vh;
         background-image: url(./assets/home/background-home-tablet.jpg);
     }
 }

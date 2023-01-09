@@ -286,15 +286,19 @@ select {
 
 @media (max-width: 35rem) {
     .primary-navigation {
-        background: lightblue;
-        --underline-gap: 2rem;
+        background: gray;
+        --underline-gap: .5rem;
         position: fixed;
         z-index: 1000;
-        inset: 0 0 0 20%;
+        inset: 0 0 0 30%;
         list-style: none;
         padding: min(20rem, 15vh) 2rem;
         margin: 0;
         flex-direction: column;
+    }
+
+    .primary-navigation.underline-indicators > .active {
+        border: 0;
     }
 }
 

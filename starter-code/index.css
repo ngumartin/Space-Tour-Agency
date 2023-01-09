@@ -278,11 +278,24 @@ select {
 }
 
 .primary-navigation {
-    --gap: 8rem;
     --underline-gap: 2rem;
     list-style: none;
-    padding: 0;
+    padding: min(20rem, 15vh) 2rem;
     margin: 0;
+}
+
+@media (max-width: 35rem) {
+    .primary-navigation {
+        background: lightblue;
+        --underline-gap: 2rem;
+        position: fixed;
+        z-index: 1000;
+        inset: 0 0 0 20%;
+        list-style: none;
+        padding: min(20rem, 15vh) 2rem;
+        margin: 0;
+        flex-direction: column;
+    }
 }
 
 .primary-navigation a {

@@ -282,11 +282,19 @@ select {
     list-style: none;
     padding: min(20rem, 15vh) 2rem;
     margin: 0;
+    background: hsl( var(--clr-dark) / 0.02);
+    /* backdrop-filter: blur(1.5rem); */
+}
+
+@supports (backdrop-filter: blur(1rem)) {
+    .primary-navigation {
+        background: hsl( var(--clr-white) / 0.02);
+        backdrop-filter: blur(1.5rem);
+    }
 }
 
 @media (max-width: 35rem) {
     .primary-navigation {
-        background: gray;
         --underline-gap: .5rem;
         position: fixed;
         z-index: 1000;

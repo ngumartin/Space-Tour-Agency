@@ -152,37 +152,6 @@ select {
     max-width: 80rem;    
 }
 
-.grid-container {
-    text-align: center;
-    display: grid;
-    place-items: center;
-    padding-inline: 1rem;
-}
-
-.grid-container * {
-    max-width: 50ch;
-}
-
-@media (min-width: 55em) {
-    .grid-container {
-        text-align: left;
-        column-gap: var(--container-gap, 2rem);
-        grid-template-columns: minmax(1rem, 1fr) repeat(2, minmax(0, 30rem)) minmax(1rem, 1fr);
-    }
-    .grid-container > *:first-child {
-        grid-column: 2;
-    }
-    
-    .grid-container > *:last-child {
-        grid-column: 3;
-    }
-
-    .grid-container--home {
-        padding-bottom: max(6rem, 20vh);
-        align-items: end;
-    }
-}
-
 .sr-only {
     position: absolute;
     width: 1px;
@@ -476,10 +445,6 @@ select {
     background-color: hsl( var(--clr-white) / 1 );
 }
 
-/* ============================= */
-/*    Page Specific Background   */
-/* ==============================*/
-
 /* Home */
 
 body {
@@ -502,5 +467,40 @@ body {
 @media (min-width: 55rem) {
     .home {
         background-image: url(./assets/home/background-home-desktop.jpg);
+    }
+}
+
+/* ============================= */
+/*            Layout             */
+/* ==============================*/
+
+.grid-container {
+    text-align: center;
+    display: grid;
+    place-items: center;
+    padding-inline: 1rem;
+}
+
+.grid-container * {
+    max-width: 50ch;
+}
+
+@media (min-width: 55em) {
+    .grid-container {
+        text-align: left;
+        column-gap: var(--container-gap, 2rem);
+        grid-template-columns: minmax(1rem, 1fr) repeat(2, minmax(0, 30rem)) minmax(1rem, 1fr);
+    }
+    .grid-container > *:first-child {
+        grid-column: 2;
+    }
+    
+    .grid-container > *:last-child {
+        grid-column: 3;
+    }
+
+    .grid-container--home {
+        padding-bottom: max(6rem, 20vh);
+        align-items: end;
     }
 }

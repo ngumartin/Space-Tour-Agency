@@ -306,7 +306,7 @@ select {
     display: none;
 }
 
-@media (max-width: 45rem) {
+@media (max-width: 35rem) {
     .primary-navigation {
         --underline-gap: .5rem;
         position: fixed;
@@ -358,13 +358,13 @@ select {
     }
 }
 
-@media (min-width: 45em) and (max-width: 55rem) {
+@media (min-width: 35em) and (max-width: 55rem) {
     .primary-navigation a > span {
         display: none;
     }
 }
 
-@media (min-width: 55em) {
+@media (min-width: 45em) {
     .primary-header::after {
         content: '';
         display: block;
@@ -457,14 +457,14 @@ body {
     background-image: url(./assets/home/background-home-mobile.jpg);
 }
 
-@media (min-width: 45rem) {
+@media (min-width: 35rem) {
     .home {
         background-size: 1440px 100vh;
         background-image: url(./assets/home/background-home-tablet.jpg);
     }
 }
 
-@media (min-width: 55rem) {
+@media (min-width: 45rem) {
     .home {
         background-image: url(./assets/home/background-home-desktop.jpg);
     }
@@ -523,20 +523,50 @@ body {
     margin-top: 2.5rem;
 }
 
-@media (min-width: 55em) {
+.destination-meta p {
+    font-size: 1.75rem;
+}
+
+@media (min-width: 35em) {
+    .numbered-title {
+        justify-self: start;
+        margin-top: 2rem;
+    }
+    .destination-meta {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}
+
+@media (min-width: 45em) {
     .grid-container {
         text-align: left;
-        column-gap: var(--container-gap, 2rem);
+        column-gap: var(--container-gap, 3rem);
         grid-template-columns: minmax(1rem, 1fr) repeat(2, minmax(0, 30rem)) minmax(1rem, 1fr);
-    }
-    .grid-container > *:first-child {
-        grid-column: 2;
-    }    
-    .grid-container > *:last-child {
-        grid-column: 3;
     }
     .grid-container--home {
         padding-bottom: max(6rem, 20vh);
         align-items: end;
+    }
+    .grid-container--home > *:first-child {
+        grid-column: 2;
+    }    
+    .grid-container--home > *:last-child { 
+        grid-column: 3;
+    }
+    .grid-container--destination {
+        align-content: start;
+        justify-items: start;
+        grid-template-areas:
+            '. title title .'
+            '. image tabs .'
+            '. image content .';
+    }
+    .grid-container--destination > img {
+        max-width: 90%;
+    }
+    .destination-meta {
+        --gap: 6rem;
+        justify-content: start;
     }
 }

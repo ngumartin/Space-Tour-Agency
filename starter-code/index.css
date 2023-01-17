@@ -145,6 +145,10 @@ select {
     margin-top: var(--flow-space, 1 rem);
 }
 
+.flow--space-small {
+    --flow-space: 0.75rem;
+}
+
 .container {
     padding-inline: 2em;
     margin-inline: auto;
@@ -168,7 +172,7 @@ select {
     z-index: 9999;
     background: hsl( var(--clr-white));
     color: hsl( var(--clr-dark));
-    padding: .5em 1em;
+    padding: 0.5em 1em;
     margin-inline: auto;
     transform: translateY(-100%);
     transition: transform 250ms ease-in;
@@ -386,9 +390,10 @@ select {
 
 .underline-indicators > * {
     cursor: pointer;
-    padding: var(--underline-gap, 1 rem) 0;
+    padding: var(--underline-gap, 0.5rem) 0;
     border: 0;
     border-bottom: .2rem solid hsl( var(--clr-white) / 0 );
+    background-color: transparent;
 } 
 
 .underline-indicators > *:hover,
@@ -444,13 +449,15 @@ select {
     background-color: hsl( var(--clr-white) / 1 );
 }
 
-/* Home */
-
 body {
     background-size: 980px 100vh;
     background-repeat: no-repeat;
     background-position: bottom center;
 }
+
+/* ============= */
+/*      Home     */
+/* ============= */
 
 .home {
     background-image: url(./assets/home/background-home-mobile.jpg);
@@ -466,6 +473,40 @@ body {
 @media (min-width: 45rem) {
     .home {
         background-image: url(./assets/home/background-home-desktop.jpg);
+    }
+}
+
+.destination {
+    background-image: url(./assets/destination/background-destination-mobile.jpg);
+}
+
+@media (min-width: 35rem) {
+    .destination {
+        background-size: 1440px 100vh;
+        background-image: url(./assets/destination/background-destination-tablet.jpg);
+    }
+}
+
+@media (min-width: 45rem) {
+    .destination {
+        background-image: url(./assets/destination/background-destination-desktop.jpg);
+    }
+}
+
+.crew {
+    background-image: url(./assets/crew/background-crew-mobile.jpg);
+}
+
+@media (min-width: 35rem) {
+    .crew {
+        background-size: 1440px 100vh;
+        background-image: url(./assets/crew/background-crew-tablet.jpg);
+    }
+}
+
+@media (min-width: 45rem) {
+    .crew {
+        background-image: url(./assets/crew/background-crew-desktop.jpg);
     }
 }
 
@@ -551,6 +592,10 @@ body {
 
 .grid-container--crew > .crew-details {
     grid-area: content;
+}
+
+.crew-details h2 {
+    color: hsl( var(--clr-white) / .5);
 }
 
 @media (min-width: 35em) {

@@ -16,7 +16,6 @@ function changeTabFocus(e) {
     }
 
     //  if the right key is pushed, move to the next tab on the right
-
     if (e.keyCode === keydownRight) {
         tabFocus++;
         if (tabFocus >= tabs.length) {
@@ -25,7 +24,6 @@ function changeTabFocus(e) {
     }
 
     //  if the left key is pushed, move to the next tab on the left
-
     if (e.keyCode === keydownLeft) {
         tabFocus--;
         if (tabFocus < 0) {

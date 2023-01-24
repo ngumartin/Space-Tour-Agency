@@ -465,7 +465,7 @@ body {
 
 @media (min-width: 35rem) {
     .home {
-        /* background-size: 1440px 100vh; */
+        background-size: 800px 100vh;
         background-image: url(./assets/home/background-home-tablet.jpg);
     }
 }
@@ -646,7 +646,7 @@ body {
         max-width: 90%;
     }
     .destination-meta {
-        --gap: min(5vw, 6rem);
+        --gap: min(6vw, 6rem);
         justify-content: start;
     }
     .grid-container--crew {

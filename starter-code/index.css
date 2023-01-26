@@ -465,7 +465,7 @@ body {
 
 @media (min-width: 35rem) {
     .home {
-        background-size: 800px 100vh;
+        background-size: 1440px 100vh;
         background-image: url(./assets/home/background-home-tablet.jpg);
     }
 }
@@ -546,6 +546,7 @@ body {
 .grid-container--destination > picture {
     grid-area: image;
     max-width: 60%;
+    align-self: start;
 }
 
 .grid-container--destination > .tab-list {
@@ -620,7 +621,7 @@ body {
 @media (min-width: 45em) {
     .grid-container {
         text-align: left;
-        column-gap: var(--container-gap, 3rem);
+        column-gap: var(--container-gap, 2rem);
         grid-template-columns: minmax(1rem, 1fr) repeat(2, minmax(0, 30rem)) minmax(1rem, 1fr);
     }
     .grid-container--home {
@@ -641,8 +642,7 @@ body {
             '. image tabs .'
             '. image content .';
     }
-    .grid-container--destination > picture,
-    .grid-container--crew > picture {
+    .grid-container--destination > picture {
         max-width: 90%;
     }
     .destination-meta {
@@ -650,15 +650,18 @@ body {
         justify-content: start;
     }
     .grid-container--crew {
+        grid-template-columns: minmax(1rem, 1fr) minmax(0, 30rem) minmax(0, 23rem) minmax(1rem, 1fr);
+        justify-items: start;
         grid-template-areas:
             '. title title .'
             '. content image .'
             '. tabs image .';
     }
-    .grid-container--crew > .dot-indicators {
-        justify-self: start;
-    }
-    /* .grid-container--crew > picture {
+
+    .grid-container--crew > picture {
+        grid-column: span 2;
         align-self: end;
-    } */
+        max-width: 90%;
+    }
+
 }

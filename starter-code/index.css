@@ -499,7 +499,7 @@ body {
 
 @media (min-width: 35rem) {
     .crew {
-        /* background-size: 1440px 100vh; */
+        background-size: 1440px 100vh;
         background-image: url(./assets/crew/background-crew-tablet.jpg);
     }
 }

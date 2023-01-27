@@ -1,43 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Barlow:wght@400;700&family=Bellefair&display=swap" rel="stylesheet">
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="./index.css">
-  <title>Space tourism website</title>
-  <!-- Custom Javascript -->
-  <script src="navigation.js" defer></script>
-  <script src="tabs.js" defer></script>
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Barlow:wght@400;700&family=Bellefair&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./index.css">
+    <title>Space Tourism Website</title>
+    <!-- Custom Javascript -->
+    <script src="navigation.js" defer></script>
+    <script src="tabs.js" defer></script>
+  </head>
 
-<body class="technology">
-
-  <a class="skip-to-content" href="#main">Skip to content</a>
+  <body class="technology">
+    <a class="skip-to-content" href="#main">Skip to content</a>
     <header class="primary-header flex">
       <div>
         <img src="./assets/shared/logo.svg" alt="space tourism logo" class="logo">
       </div>
-
       <button class="mobile-nav-toggle" aria-controls="primary-navigation"><span class="sr-only" aria-expanded="false">Menu</span></button>
-
       <nav>
         <ul id="primary-navigation" data-visible="false" class="primary-navigation underline-indicators flex">
             <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="index.html"><span aria-hidden="true">00</span>Home</a>
-            <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="destination.html"><span aria-hidden="true">01</span>Destination</a>
-            <li class="active"><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="crew.html"><span aria-hidden="true">02</span>Crew</a>
+            <li class="active"><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="destination.html"><span aria-hidden="true">01</span>Destination</a>
+            <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="crew.html"><span aria-hidden="true">02</span>Crew</a>
             <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="technology.html"><span aria-hidden="true">03</span>Technology</a>
         </ul>
       </nav>
     </header>
   
     <main id="main" class="grid-container grid-container--technology flow">
-
       <h1 class="numbered-title"><span aria-hidden="true">03</span>space launch 101</h1>
 
       <picture id="launch-vehicle-image">
@@ -54,8 +50,8 @@
         <source srcset="assets/technology/image-spaceport-landscape.webp" type="image/webp">
         <img src="./assets/technology/image-spaceport-landscape.jpg" alt="spaceport">
       </picture>
-
-      <div class="flex" style="margin-bottom: 50vh; --flow-space: 4rem">
+      
+      <div class="flex" style="margin-bottom: 1vh; --flow-space: 2rem">
         <div class="circle-indicators flex">
             <button aria-selected="true"><span>1</span></button>
         </div>
@@ -67,7 +63,7 @@
         </div>
     </div>
 
-    <article class="crew-details flow" id="launch-vehicle-tab" role="tabpanel" tabindex="0">
+    <article class="technology-details flow" id="launch-vehicle-tab" role="tabpanel" tabindex="0">
       <header class="flow flow--space-small">
         <h2 class="fs-600 ff-serif uppercase">The terminology...</h2>
         <p class="fs-700 ff-serif uppercase">Launch vehicle</p>

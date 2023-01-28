@@ -515,14 +515,15 @@ body {
 }
 
 @media (min-width: 35rem) {
-    .destination {
+    .technology {
         /* background-size: 1440px 100vh; */
         background-image: url(./assets/technology/background-technology-tablet.jpg);
     }
 }
 
 @media (min-width: 45rem) {
-    .destination {
+    .technology {
+        background-size: 1440px 100vh;
         background-image: url(./assets/technology/background-technology-desktop.jpg);
     }
 }
@@ -709,11 +710,15 @@ body {
     grid-area: content;
 }
 
-@media (min-width: 45em) {
+@media (min-width: 35em) {
     .grid-container {
         text-align: left;
         column-gap: var(--container-gap, 2rem);
         grid-template-columns: minmax(1rem, 1fr) repeat(2, minmax(0, 30rem)) minmax(1rem, 1fr);
+    }
+
+    .grid-container--technology > .tab-list {
+        grid-area: tabs;
     }
 
     .grid-container--technology {

@@ -623,8 +623,7 @@ body {
 /* ==============================*/
 
 .grid-container--technology {
-    /* --flow-space:2rem; */
-    margin-left: 0%;
+    --flow-space:2rem;
     grid-template-areas:
         'title'
         'image'
@@ -674,6 +673,15 @@ body {
             'content'
             'tabs'
             'image';
+    }
+    .grid-container--technology {
+        padding-bottom: 0;
+        --flow-space: 2rem;
+        grid-template-areas:
+            'title'
+            'content'
+            'tabs'
+            'content';
     }
 }
 

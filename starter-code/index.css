@@ -716,8 +716,7 @@ body {
             '. image content .';
     }
     .grid-container--destination > picture,
-    .grid-container--crew > picture,
-    .grid-container--technology > picture {
+    .grid-container--crew > picture {
         max-width: 90%;
     }
     .destination-meta {
@@ -745,26 +744,25 @@ body {
         justify-items: start;
         align-content: start;
         grid-template-areas:
-        '. title title .'
-        '. content image .'
-        '. tabs image .';
-    }
-    .parentCircle {
-        flex-flow: column; 
+        '. title image .'
+        '. tabs content .';
+        /* '. tabs  image.'; */
     }
     .grid-container--technology > .circle-indicators {
         grid-area: tabs;
+        flex-flow: column;
     }
-
-    
     .grid-container--technology > .technology-details {
         justify-self: start;
     }
-    .grid-container--technology > picture {
+    /* .grid-container--technology > picture {
+        background-image: url(./assets/technology/image-launch-vehicle-portrait.jpg);
+        background-image: url(./assets/technology/image-space-capsule-portrait.jpg);
+        background-image: url(./assets/technology/image-spaceport-portrait.jpg);
         grid-column: span 2;
         align-self: end;
         max-width: 80%;
-    }
+    } */
     
 }
 
@@ -809,9 +807,9 @@ body {
         grid-template-columns: minmax(1rem, 1fr) minmax(0, 30rem) minmax(0, 23rem) minmax(1rem, 1fr);
         justify-items: start;
         grid-template-areas:
-            '. title title .'
-            '. content image .'
-            '. tabs image .';
+        '. title title .'
+        '. content image .'
+        '. tabs image .';
     }
 
     .grid-container--technology > image {

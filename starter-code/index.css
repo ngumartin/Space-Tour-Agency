@@ -527,6 +527,9 @@ body {
         background-size: 1440px 100vh;
         background-image: url(./assets/technology/background-technology-desktop.jpg);
     }
+    #vehicle-image {
+        background-image: url(./assets/technology/image-launch-vehicle-portrait.jpg);
+    }
 }
 
 /* ============================= */
@@ -750,14 +753,14 @@ body {
     .grid-container--technology > .circle-indicators {
         grid-area: tabs;
         flex-flow: column;
+        justify-self: right;
+        padding-top: 4rem;
     }
     .grid-container--technology > .technology-details {
         justify-self: start;
+        padding-top: 6rem;
     }
     .grid-container--technology > picture {
-        /* background-image: url(./assets/technology/image-launch-vehicle-portrait.jpg);
-        background-image: url(./assets/technology/image-space-capsule-portrait.jpg);
-        background-image: url(./assets/technology/image-spaceport-portrait.jpg); */
         grid-column: span 2;
         align-self: end;
         max-width: 80%;

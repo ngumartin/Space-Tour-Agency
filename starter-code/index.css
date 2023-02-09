@@ -650,7 +650,7 @@ body {
 
 .technology-details h2 {
     color: hsl( var(--clr-white) / .5);
-    text-align: left;
+    text-align: center;
 }
 
 .destination-meta {
@@ -690,6 +690,10 @@ body {
             'content'
             'tabs'
             'content';
+    }
+    .technology-details h2 {
+        color: hsl( var(--clr-white) / .5);
+        text-align: center;
     }
 }
 
@@ -763,18 +767,21 @@ body {
         flex-flow: column;
         justify-self: right;
         padding-right: 2rem;
-        padding-top: 6rem;
+        padding-top: 4rem;
     }
     .grid-container--technology > .technology-details {
         justify-self: start;
-        padding-top: 8rem;
+        padding-top: 6rem;
         text-align: left;
     }
     .grid-container--technology > picture {
         grid-column: span 2;
         align-self: end;
-        max-width: 70%;
-        
+        max-width: 40%;
+    }
+    .technology-details h2 {
+        color: hsl( var(--clr-white) / .5);
+        text-align: left;
     }
 }
 

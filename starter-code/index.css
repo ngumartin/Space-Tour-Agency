@@ -540,7 +540,7 @@ body {
     text-align: center;
     display: grid;
     place-items: center;
-    padding-inline: 1rem;
+    /* padding-inline: 1rem; */
     padding-bottom: 3rem;
 }
 
@@ -749,6 +749,12 @@ body {
         grid-template-areas:
         '. title title .'
         'tabs content.image';
+        position: relative;
+    }
+    .grid-container--technology > picture {
+        position: absolute;
+        right: 0;
+        top: 0;
     }
     .grid-container--technology > .circle-indicators {
         grid-area: tabs;
@@ -764,6 +770,7 @@ body {
         grid-column: span 2;
         align-self: end;
         max-width: 80%;
+        
     }
-    
 }
+

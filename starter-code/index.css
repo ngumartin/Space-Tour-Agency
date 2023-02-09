@@ -650,6 +650,7 @@ body {
 
 .technology-details h2 {
     color: hsl( var(--clr-white) / .5);
+    text-align: left;
 }
 
 .destination-meta {
@@ -744,6 +745,7 @@ body {
     }
     /* technology */
     .grid-container--technology {
+        /* use display flex */
         justify-items: start;
         align-content: start;
         grid-template-areas:
@@ -760,16 +762,18 @@ body {
         grid-area: tabs;
         flex-flow: column;
         justify-self: right;
-        padding-top: 4rem;
+        padding-right: 2rem;
+        padding-top: 6rem;
     }
     .grid-container--technology > .technology-details {
         justify-self: start;
-        padding-top: 6rem;
+        padding-top: 8rem;
+        text-align: left;
     }
     .grid-container--technology > picture {
         grid-column: span 2;
         align-self: end;
-        max-width: 80%;
+        max-width: 70%;
         
     }
 }

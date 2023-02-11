@@ -1,4 +1,4 @@
-
+import  articleDetails  from "../data.json" assert { type: "json" };
 const nav = document.querySelector('.primary-navigation');
 const navToggle = document.querySelector('.mobile-nav-toggle');
 

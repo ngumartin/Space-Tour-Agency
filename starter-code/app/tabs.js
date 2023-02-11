@@ -1,6 +1,7 @@
 
 const tabList = document.querySelector('[role="tablist"]');
 const tabs = tabList.querySelectorAll('[role="tab"]');
+import  articleDetails  from "../data.json" assert { type: "json" };
 
 tabList.addEventListener('keydown', changeTabFocus);
 
@@ -65,3 +66,5 @@ function showContent(parent, content) {
     parent.querySelector(content)    
         .removeAttribute('hidden');
 }
+
+console.log(articleDetails)

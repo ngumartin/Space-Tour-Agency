@@ -1,7 +1,6 @@
 
 const tabList = document.querySelector('[role="tablist"]');
 const tabs = tabList.querySelectorAll('[role="tab"]');
-import  articleDetails  from "../data.json" assert { type: "json" };
 
 tabList.addEventListener('keydown', changeTabFocus);
 
@@ -48,23 +47,10 @@ function changeTabPanel(e) {
 
     targetTab.setAttribute('aria-selected', true);
 
-    hidecontent(mainContainer, '[role="tabpanel"]');
-    showContent(mainContainer, [`#${targetPanel}`]);
+    mainContainer
+        .querySelectorAll('[role="tabpanel"]')
+        .forEach((panel) => panel.setAttribute('hidden', true));
 
-    hidecontent(mainContainer, 'picture');
-    showContent(mainContainer, [`#${targetImage}`]);
+    mainContainer.querySelector([`#${targetPanel}`]).removeAttribute('hidden');
 
 }
-
-function hidecontent(parent, content) {
-    parent
-        .querySelectorAll(content)
-        .forEach((item) => item.setAttribute('hidden', true));
-}
-
-function showContent(parent, content) {
-    parent.querySelector(content)    
-        .removeAttribute('hidden');
-}
-
-console.log(articleDetails)

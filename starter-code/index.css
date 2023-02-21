@@ -548,6 +548,7 @@ body {
 
 .numbered-title {
     grid-area: title;
+    margin-left: 1rem;
 }
 
 /* ============================= */
@@ -635,6 +636,7 @@ body {
 .grid-container--technology > picture {
     grid-area: image;
     max-width: 100%;
+    max-height: 100%;
     align-self: start;
 }
 
@@ -693,6 +695,21 @@ body {
         color: hsl( var(--clr-white) / .5);
         text-align: center;
     }
+    .grid-container--technology > picture {
+        grid-area: image;
+        max-width: 100%;
+        align-self: start;
+    }
+    .grid-container--technology > .circle-indicators {
+        grid-area: tabs;
+        margin-top: 0px;
+    }
+    
+    .grid-container--technology > .technology-details {
+        grid-area: content;
+        margin-top: 0rem;
+    }
+    
 }
 
 @media (min-width: 45em) {
@@ -739,6 +756,7 @@ body {
     }
     .grid-container--crew > .dot-indicators {
         justify-self: start;
+        overflow: hidden;
     }
     .grid-container--crew > picture {
         grid-column: span 2;
@@ -748,6 +766,7 @@ body {
     /* technology */
     .grid-container--technology {
         /* use display flex */
+        
         justify-items: start;
         align-content: start;
         grid-template-areas:
@@ -757,20 +776,24 @@ body {
     }
     .grid-container--technology > picture {
         position: absolute;
-        right: 0;
+        right: 0rem;
         top: 0;
     }
     .grid-container--technology > .circle-indicators {
-        grid-area: tabs;
+        /* grid-area: tabs; */
+        overflow: hidden;
         flex-flow: column;
-        justify-self: right;
-        padding-right: 2rem;
+        justify-self: center;
+        padding-left: 4rem;
         padding-top: 4rem;
+
     }
     .grid-container--technology > .technology-details {
         justify-self: start;
+        overflow: hidden;
         padding-top: 6rem;
         text-align: left;
+        overflow: auto;
     }
     .grid-container--technology > picture {
         grid-column: span 2;

@@ -40,16 +40,49 @@
 
       <h1 class="numbered-title"><span aria-hidden="true">02</span>Meet your crew</h1>
 
+      <article class="crew-details flow" id="commander-tab">
+        <header class="flow flow--space-small">
+          <h2 class="fs600 ff-serif uppercase">Commander</h2>
+          <p class="fs-700 ff-serif uppercase">Douglas Hurley</p>
+        </header>
+          <p>Douglas Gerald Hurley is an American engineer, former Marine Corp pilot and former NASA astronaut.   He launched into space for the third time as a commander of the Crew Dragon Demo-2.</p>
+      </article>
+      <article hidden class="crew-details flow" id="mission-tab">
+        <header class="flow flow--space-small">
+          <h2 class="fs600 ff-serif uppercase">Mission Specialist</h2>
+          <p class="fs-700 ff-serif uppercase">Mark Shuttleworth</p>
+      </header>
+          <p>Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind 
+            the Linux-based Ubuntu operating system. Shuttleworth became the first South 
+            African to travel to space as a space tourist.</p>
+      </article>
+      <article hidden class="crew-details flow" id="pilot-tab">
+        <header class="flow flow--space-small">
+          <h2 class="fs600 ff-serif uppercase">Pilot</h2>
+          <p class="fs-700 ff-serif uppercase">Victor Glover</p>
+        </header>
+          <p>Pilot on the first operational flight of the SpaceX Crew Dragon to the 
+            International Space Station. Glover is a commander in the U.S. Navy where 
+            he pilots an F/A-18.He was a crew member of Expedition 64, and served as a 
+            station systems flight engineer.</p>
+      </article>
+      <article hidden class="crew-details flow" id="crew-tab">
+        <header class="flow flow--space-small">
+          <h2 class="fs600 ff-serif uppercase">Flight Engineer</h2>
+          <p class="fs-700 ff-serif uppercase">Anousheh Ansari</p>
+        </header>
+          <p>Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems. 
+            Ansari was the fourth self-funded space tourist, the first self-funded woman to 
+            fly to the ISS, and the first Iranian in space.</p>
+      </article>
+
       <div class="dot-indicators flex" role="tablist" aria-label="crew-member-list">
         <button aria-selected="true" aria-controls="commander-tab" role="tab" data-image="commander-image" tabindex="0"><span class="sr-only">The Commander</span></button>
         <button aria-selected="false" aria-controls="mission-tab" role="tab" data-image="mission-image" tabindex="-1"><span class="sr-only">The Mission Specialist</span></button>
         <button aria-selected="false" aria-controls="pilot-tab" role="tab" data-image="pilot-image" tabindex="-1"><span class="sr-only">The Pilot</span></button> 
         <button aria-selected="false" aria-controls="crew-tab" role="tab" data-image="crew-image" tabindex="-1"><span class="sr-only">The Crew Engineer</span></button>   
       </div>
-      <!-- TODO: name, images, role, bio -->
-      <!-- commander -->
       
-
       <picture id="commander-image">
         <source srcset="assets/crew/image-douglas-hurley.webp" type="image/webp">
         <img src="./assets/crew/image-douglas-hurley.png" alt="Douglas Hurley">

@@ -546,7 +546,6 @@ body {
 
 .numbered-title {
     grid-area: title;
-    margin-left: 1rem;
     padding-bottom: 0em;
 }
 

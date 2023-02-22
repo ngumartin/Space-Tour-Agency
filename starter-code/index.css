@@ -791,25 +791,28 @@ body {
         top: 5em;
     }
     .grid-container--technology > .circle-indicators {
-        /* grid-area: tabs; */
+        grid-area: tabs;
         overflow: auto;
         flex-flow: column;
         justify-self: right;
         padding-top: 4rem;
-        margin-top: 3em;
+        margin-top: 4em;
     }
     .grid-container--technology > .technology-details {
         justify-self: start;
         overflow: auto;
-        padding-top: 6rem;
+        padding-top: 7rem;
         text-align: left;
-
+        
     }
     .technology-details h2 {
         color: hsl( var(--clr-white) / .5);
         text-align: left;
         font-size: 20.25px;
         margin-top: 16em;
+    }
+    .grid-container--technology > .numbered-title  {
+        margin-left: -3em;
     }
 }
 

@@ -525,9 +525,6 @@ body {
         background-size: 100vw 100vh;
         background-image: url(./assets/technology/background-technology-desktop.jpg);
     }
-    /* #vehicle-image {
-        background-image: url(./assets/technology/image-launch-vehicle-portrait.jpg);
-    } */
 }
 
 /* ============================= */
@@ -640,22 +637,16 @@ body {
     background-size: cover;
     width: 100%;
     align-self: start;
-    border: solid 2px red;
     margin-top: 0em;
 }
-/* .grid-container--technology img {
-    height: 100%;
-} */
 
 .grid-container--technology > .circle-indicators {
     grid-area: tabs;
-    border: green solid 3px;
     margin-top: -25em;
 }
 
 .grid-container--technology > .technology-details {
     grid-area: content;
-    border: pink solid 3px;
     margin-top: -25em;
 }
 
@@ -715,16 +706,16 @@ body {
         align-self: start;
     }
     .grid-container--technology img {
-        border: solid 2px green;
         height: 100%;
     }
     .grid-container--technology > .circle-indicators {
         grid-area: tabs;
+        margin-top: -22em;
     }
     
     .grid-container--technology > .technology-details {
         grid-area: content;
-        margin-top: -10em;
+        margin-top: -22em;
     }
     
 }
@@ -792,9 +783,12 @@ body {
         position: relative;
     }
     .grid-container--technology > picture {
+        grid-column: span 2;
+        align-self: end;
+        max-width: 40%;
         position: absolute;
         right: 0rem;
-        top: 0;
+        top: 5em;
     }
     .grid-container--technology > .circle-indicators {
         /* grid-area: tabs; */
@@ -802,6 +796,7 @@ body {
         flex-flow: column;
         justify-self: right;
         padding-top: 4rem;
+        margin-top: 3em;
     }
     .grid-container--technology > .technology-details {
         justify-self: start;
@@ -810,14 +805,11 @@ body {
         text-align: left;
 
     }
-    .grid-container--technology > picture {
-        grid-column: span 2;
-        align-self: end;
-        max-width: 40%;
-    }
     .technology-details h2 {
         color: hsl( var(--clr-white) / .5);
         text-align: left;
+        font-size: 20.25px;
+        margin-top: 16em;
     }
 }
 

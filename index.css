@@ -641,12 +641,12 @@ body {
 
 .grid-container--technology > .circle-indicators {
     grid-area: tabs;
-    margin-top: -25em;
+    margin-top: -13em;
 }
 
 .grid-container--technology > .technology-details {
     grid-area: content;
-    margin-top: -25em;
+    margin-top: -10em;
 }
 
 .technology-details h2 {
